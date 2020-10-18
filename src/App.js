@@ -1,18 +1,38 @@
+import {HashRouter,Route,Switch} from "react-router-dom";
+import FirstPage from "./FirstPage";
+import SecondPage from "./SecondPage";
 import React, { Component } from "react";
-import ITManPlayer from "./ITManPlayer";
+
+
 class App extends Component {
-  videoPlay = () =>{
-    this.ITManPlayer.video.play();
-  }
-  videoPause= () =>{
-    this.ITManPlayer.video.pause();
-  }
+
   render() {
     return (
+      <HashRouter>
+          <Switch>
+            <Route exact path="/" component={FirstPage}/>
+            <Route path="/second" component={SecondPage}/>
+          </Switch>
+
+         {/* <video autoPlay muted loop id="myVideo">
+            <source src="./vmusic.mp4" type="video/mp4"/>
+          </video>
+
+          <div className="content">
+            <h1>Start Exploring</h1>
+            <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+            <button id="myBtn" onClick="myFunction()">Pause</button>
+          </div>
+
       <div className="wrap">
-        <ITManPlayer
+        {/*<video width="300" height="300" >
+          <source src="./vmusic.mp4" type="video/mp4"/>
+          </video>
+
+          <ITManPlayer
           ref={player => (this.ITManPlayer = player)}
-          src="http://www.html5videoplayer.net/videos/toystory.mp4"
+          src="./vmusic.mp4"
+          type="video/MP4"
           eventON={{
             pause: () => {
               console.log("暫停");
@@ -24,7 +44,8 @@ class App extends Component {
         />
         <button onClick={this.videoPlay}>播放</button>
         <button onClick={this.videoPause}>暫停</button>
-      </div>
+      </div>*/}
+      </HashRouter>
     );
   }
 }
