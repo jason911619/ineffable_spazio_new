@@ -17,7 +17,7 @@ const Layout1=(props)=>{
     return(
         <div style={StyleSheet}>
             <nav>
-                <Link to="/">點我連到第一頁</Link>
+                
                 <Link to="/second" style={{marginLeft:"20px"}}>點我連到第二頁</Link>
             </nav> 
             {props.children}

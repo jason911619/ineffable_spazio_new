@@ -16,10 +16,12 @@ const FirstPage = ()=>{
 }
 */
 
-   var video = document.getElementById("myVideo");
-    var btn = document.getElementById("myBtn");
 
 function myFunction() {
+
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+
   if (video.paused) {
     video.play();
     btn.innerHTML = "Pause";
@@ -32,7 +34,6 @@ function myFunction() {
 
     return (
         <div>
-            <h1 style={{color:"white",fontFamily:"Microsoft JhengHei"}}>我是第一頁</h1>
             <Layout/>
             
             <video autoPlay muted loop id="myVideo">

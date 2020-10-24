@@ -51,7 +51,7 @@ const Layout=(props)=>{
             <div className="nav-brand" style={divStyle}>
 
                 <nav>
-                <Link style={{ textDecoration: 'none',color: "white" }} to="/">Infffable Spazio</Link>
+                <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em" }} to="/">Infffable Spazio</Link>
                 </nav>
             </div>
             <div  className="icon" style={iconStyle}>
