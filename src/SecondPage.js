@@ -2,25 +2,26 @@ import React from 'react';
 import Layout from "./Layout";
 
 
-const SecondPage = ()=>{
-   /*} const StyleSheet={
+
+const SecondPage=()=>{
+   /* const StyleSheet={
         width:"100vw",
         height:"100vh",
-        backgroundColor:"#FF2E63",
+        backgroundColor:"#08D9D6",
         display: "flex",
         alignItems:"center",
         justifyContent:"center",
         flexDirection:"column"
-    } */
-
-    return (
+    }
+    */
+    return(
         <div>
-            <Layout/>
+        <Layout/>
 
+            <h1 style={{color:"white",fontFamily:"Microsoft JhengHei"}}>我是第二頁</h1>
 
         </div>
-    );
+    )
 }
 
 export default SecondPage;
-

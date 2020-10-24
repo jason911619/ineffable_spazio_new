@@ -1,27 +1,24 @@
-
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import {HashRouter,Route,Switch} from "react-router-dom";
 import FirstPage from "./FirstPage";
 import SecondPage from "./SecondPage";
 import React, { Component } from "react";
+import Layout1 from "./Layout1"; //記得要引入
 
 
 class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
-      <div>
-        <FirstPage title="功能選單" />
-        <ul>
-                        {/*Link組件中的to會改變網址，但不會刷新頁面*/}
-                        <li><Link to="/">Infffable Spazio</Link></li>
-                        <li><Link to="/about">Contact</Link></li>
-                    </ul>
-                    <Route path="/" component={FirstPage} />
-                    <Route path="/about" component={SecondPage} />
-      </div>
-  </BrowserRouter>
 
+      <HashRouter>
+            <Switch>
+            <Layout1>
+                    <Route exact path="/" component={FirstPage}/>
+                    <Route path="/second" component={SecondPage}/>
+                </Layout1>
+            </Switch>
+      </HashRouter>
+      
          /* <video autoPlay muted loop id="myVideo">
             <source src="./vmusic.mp4" type="video/mp4"/>
           </video>

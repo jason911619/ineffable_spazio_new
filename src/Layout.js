@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Layout=(props)=>{
     const navStyle={
@@ -6,15 +7,16 @@ const Layout=(props)=>{
         top:"0",
         left:"0",
         width:"100%",
-        height:"9vh",
+        height:"10vh",
         backgroundColor:"rgb(0, 0, 0)",
         display:"flex",
         alignItems:"center"
     };
     const divStyle={
+        color: "inherit", /* 移除超連結顏色 */
         marginLeft:"30px",
         position:"fixed",
-        color:"white",
+   
         backgroundColor:"rgb(0, 0, 0)"
     };
     const iconStyle={
@@ -47,7 +49,10 @@ const Layout=(props)=>{
       <div>
           <div className="nav-bar" style={navStyle}>
             <div className="nav-brand" style={divStyle}>
-                <h2> Infffable Spazio </h2>
+
+                <nav>
+                <Link style={{ textDecoration: 'none',color: "white" }} to="/">Infffable Spazio</Link>
+                </nav>
             </div>
             <div  className="icon" style={iconStyle}>
                 <img style={{height:"120%"}} src="./logo.jpg" alt="icon"/>
