@@ -2,26 +2,35 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const Layout1=(props)=>{
-
-    const StyleSheet={
-        width:"100vw",
-        height:"100vh",
-        backgroundColor:(props.location.pathname==="/")?"#FF2E63":"#08D9D6",
-        display: "flex",
-        alignItems:"center",
-        justifyContent:"center",
-        flexDirection:"column"
-    }
-
+    const navStyle={
+        position:"fixed",
+        top:"0",
+        left:"0",
+        width:"100%",
+        height:"10vh",
+        backgroundColor:"rgb(255, 255, 255)",
+        display:"flex",
+        alignItems:"center"
+    };
+    const divStyle={
+        color: "inherit", /* 移除超連結顏色 */
+        marginLeft:"30px",
+        position:"fixed",
+        backgroundColor:"rgb(255, 255, 255)",
+        paddingLeft: "45%",
+    };
 
     return(
-        <div style={StyleSheet}>
-            <nav>
-                
-                <Link to="/second" style={{marginLeft:"20px"}}>點我連到第二頁</Link>
-            </nav> 
-            {props.children}
-        </div>
+      <div>
+          <div className="nav-bar" style={navStyle}>
+          <div className="nav-brand" style={divStyle}>
+                <nav>
+                    <Link style={{ textDecoration: 'none',color: "black",fontSize: "1.5em",textAlign: "center" }} to="/third">建材代理</Link>
+                </nav>
+            </div>
+           
+          </div>
+      </div>
     );
 }
 export default Layout1;

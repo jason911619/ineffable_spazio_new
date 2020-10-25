@@ -4,16 +4,7 @@ import Layout from "./Layout";
 
 
 const SecondPage=()=>{
-   /* const StyleSheet={
-        width:"100vw",
-        height:"100vh",
-        backgroundColor:"#08D9D6",
-        display: "flex",
-        alignItems:"center",
-        justifyContent:"center",
-        flexDirection:"column"
-    }
-    */
+
     return(
         <div>
         <Layout/>

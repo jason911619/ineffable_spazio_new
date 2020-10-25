@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const Layout=(props)=>{
+const NinthPage=(props)=>{
     const navStyle={
         position:"fixed",
         top:"0",
@@ -13,20 +13,19 @@ const Layout=(props)=>{
         alignItems:"center"
     };
     const divStyle={
-        color: "inherit", /* 移除超連結顏色 */
         marginLeft:"30px",
         position:"fixed",
-   
         backgroundColor:"rgb(0, 0, 0)"
     };
     const iconStyle={
+        zIndex:"1",
         marginLeft:"17%",
         height:"25px",
         width:"25px",
         borderRadius:"1px",
         backgroundColor:"black"
     };
-    const inputStyle={
+   /* const inputStyle={
         marginLeft:"30px",
         padding:"0px 7px",
         height:"25px",
@@ -37,7 +36,7 @@ const Layout=(props)=>{
         backgroundPosition:"97% 50%",
         backgroundSize:"auto 80%",
         backgroundRepeat:"no-repeat"
-    };
+    }; */
     const contactStyle={
         marginRight:"30px",
         flex: "1",
@@ -50,16 +49,16 @@ const Layout=(props)=>{
           <div className="nav-bar" style={navStyle}>
             <div className="nav-brand" style={divStyle}>
                 <nav>
-                    <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em" }} to="/">Infffable Spazio</Link>
+                <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em" }} to="/">Infffable Spazio</Link>
                 </nav>
             </div>
             <div  className="icon" style={iconStyle}>
                 <img style={{height:"120%"}} src="./logo.jpg" alt="icon"/>
             </div>
-            <input placeholder="搜尋" style={inputStyle}/>
+           {/* <input placeholder="搜尋" style={inputStyle}/> */}
             <div className="nav-contact" style={contactStyle}>
                 <nav>
-                    <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em" }} to="/ninth">Contact</Link>
+                <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em" }} to="/ninth">Contact</Link>
                 </nav>
             </div>
           </div>
@@ -70,4 +69,4 @@ const Layout=(props)=>{
       </div>
     );
 }
-export default Layout;
+export default NinthPage;
