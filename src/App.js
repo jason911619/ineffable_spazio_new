@@ -7,6 +7,7 @@ import React, { Component } from "react";
 import ThirdPage from "./ThirdPage";
 import FourthPage from "./FourthPage";
 import FifthPage from "./FifthPage";
+import SixthPage from "./SixthPage";
 import NinthPage from "./NinthPage";
 
 
@@ -23,6 +24,7 @@ class App extends Component {
                 <Route path="/third" component={ThirdPage}/>
                 <Route path="/fourth" component={FourthPage}/>
                 <Route path="/fifth" component={FifthPage}/>
+                <Route path="/sixth" component={SixthPage}/>
                 <Route path="/ninth" component={NinthPage}/>
             
           </Switch>
