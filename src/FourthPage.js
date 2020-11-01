@@ -52,7 +52,7 @@ function myFunction() {
             <div className="content">
 
                 <nav>
-                    <Link button id="myBtn" style={{ textDecoration: 'none',color: "white",fontSize: "1em",textAlign: "center" }} to="/seventh">Skip</Link>
+                    <Link button id="mySkip" style={{ textDecoration: 'none',color: "white",fontSize: "1em",textAlign: "center" }} to="/seventh">Skip</Link>
                 </nav>
 
                 <button id="myBtn" onClick={myFunction}>Pause</button>

@@ -32,23 +32,24 @@ const Layout=(props)=>{
         textAlign:"right",
         color:"white",
     };
+
     return(
       <div>
-          <div className="nav-bar" style={navStyle}>
+        <div className="nav-bar" style={navStyle}>
             <div className="nav-brand" style={divStyle}>
                 <nav>
-                    <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em" }} to="/">Infffable Spazio</Link>
+                <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em" }} to="/">Infffable Spazio</Link>
                 </nav>
             </div>
             <div  className="icon" style={iconStyle}>
-                <img style={{height:"120%",zIndex:"2",}} src="./logo.jpg" alt="icon"/>
+            <img style={{height:"120%",zIndex:"2",}} src="./logo.jpg" alt="icon"/>
             </div>
             <div className="nav-contact" style={contactStyle}>
                 <nav>
-                    <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em" }} to="/ninth">Contact</Link>
+                <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em" }} to="/ninth">Contact</Link>
                 </nav>
             </div>
-          </div>
+        </div>
           <div className="index-container" style={{marginTop:"43px"}}>
               {props.children}
           </div>

@@ -5,16 +5,6 @@ import {Link} from 'react-router-dom';
 
 const FirstPage = ()=>{
 
- /* const StyleSheet={
-    width:"100vw",
-    height:"100vh",
-    backgroundColor:"#FF2E63",
-    display: "flex",
-    alignItems:"center",
-    justifyContent:"center",
-    flexDirection:"column"
-}
-*/
 const divStyle={
 
   display: "block",
@@ -41,7 +31,6 @@ function myFunction() {
     btn.innerHTML = "Play";
   }
 }
-
 
     return (
         <div>

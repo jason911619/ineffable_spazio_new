@@ -36,13 +36,13 @@ function myFunction() {
   }
 }
 
-
     return (
         <div>
             <div className="nav-bar" style={navStyle}>
               <div className="nav-brand" style={divStyle}>
                 <nav>
-                    <Link style={{ textDecoration: 'none',color: "black",fontSize: "1.5em",textAlign: "center" }} to="/fifth">保養品</Link>
+                    <Link style={{ textDecoration: 'none',color: "black",fontSize: "1.5em",
+                    textAlign: "center" }} to="/fifth">保養品</Link>
                 </nav>
               </div>
             </div>
@@ -52,9 +52,8 @@ function myFunction() {
             </video>
 
             <div className="content">
-
                 <nav>
-                    <Link button id="myBtn" style={{ textDecoration: 'none',color: "white",fontSize: "1em",textAlign: "center" }} to="/eighth">Skip</Link>
+                    <Link button id="mySkip" style={{ textDecoration: 'none',color: "white",fontSize: "1em",textAlign: "center" }} to="/eighth">Skip</Link>
                 </nav>
               <button id="myBtn" onClick={myFunction}>Pause</button>
             </div>
