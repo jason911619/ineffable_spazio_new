@@ -18,7 +18,7 @@ const SecondPage=()=>{
         <div className="area1">
         <img src="./companyinfo_1.png" alt="png"/>
         <nav>
-            <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em" }} to="/third">66666666666666</Link>
+            <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em", marginTop: "-50vh", zIndex:"2" }} to="/third">66666666666666</Link>
         </nav>
         <h2>環 保 節 能 建 材</h2>
         <h3>Environmental Material</h3>
