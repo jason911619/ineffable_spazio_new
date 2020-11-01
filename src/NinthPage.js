@@ -1,70 +1,48 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+//import {Link} from 'react-router-dom';
+import Layout from './Layout';
+import './NinthPage.css';
 
 const NinthPage=(props)=>{
-    const navStyle={
-        position:"fixed",
-        top:"0",
-        left:"0",
-        width:"100%",
-        height:"10vh",
-        backgroundColor:"rgb(0, 0, 0)",
-        display:"flex",
-        alignItems:"center"
-    };
-    const divStyle={
-        marginLeft:"30px",
-        position:"fixed",
-        backgroundColor:"rgb(0, 0, 0)"
-    };
-    const iconStyle={
-        zIndex:"1",
-        marginLeft:"17%",
-        height:"25px",
-        width:"25px",
-        borderRadius:"1px",
-        backgroundColor:"black"
-    };
-   /* const inputStyle={
-        marginLeft:"30px",
-        padding:"0px 7px",
-        height:"25px",
-        width:"25%",
-        borderRadius:"2px",
-        border:"none",
-        backgroundImage:"url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png')",
-        backgroundPosition:"97% 50%",
-        backgroundSize:"auto 80%",
-        backgroundRepeat:"no-repeat"
-    }; */
-    const contactStyle={
-        marginRight:"30px",
-        flex: "1",
-        textAlign:"right",
-        color:"white",
-        backgroundColor:"rgb(0, 0, 0)"
-    };
+
+    
+
     return(
       <div>
-          <div className="nav-bar" style={navStyle}>
-            <div className="nav-brand" style={divStyle}>
-                <nav>
-                <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em" }} to="/">Infffable Spazio</Link>
-                </nav>
+        <Layout/>
+
+        <div className="main_bg">
+
+            <div className="area1_1">
+            <p>喜 識 國 際 </p>
+            <div className="hr_window"> 
+            <hr/>
+      
+
+            <div className="area2">
+                <div className="area2_1" >
+                    <p>亞太區  台北辦公室</p>
+                    <p>台北市忠孝東路一段49巷17號</p>
+                    <p>info@ineffable-spazio.com</p>
+                    <p>886 2 3393 2500</p>
+                </div>
+
+                <div className="area2_2">
+                    <p>Asia Pacific   Taipei Office</p>
+                    <p>No.17, Ln49, Zhongxiao E. Rd., Taipei city</p>
+                </div>
             </div>
-            <div  className="icon" style={iconStyle}>
-                <img style={{height:"120%"}} src="./logo.jpg" alt="icon"/>
             </div>
-           {/* <input placeholder="搜尋" style={inputStyle}/> */}
-            <div className="nav-contact" style={contactStyle}>
-                <nav>
-                <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em" }} to="/ninth">Contact</Link>
-                </nav>
-            </div>
-          </div>
-          <div className="index-container" style={{marginTop:"43px"}}>
-              {props.children}
-          </div>
+        </div>
+
+</div>
+
+
+<footer id="footerContainer">
+<div className="inner">
+<p id="copyright">Copyright&copy; Ineffable Spazio Co.,Ltd. All Rights Reserved.</p>
+</div>
+</footer>
 
       </div>
     );

@@ -8,6 +8,8 @@ import ThirdPage from "./ThirdPage";
 import FourthPage from "./FourthPage";
 import FifthPage from "./FifthPage";
 import SixthPage from "./SixthPage";
+import SeventhPage from "./SeventhPage";
+import EighthPage from "./EighthPage";
 import NinthPage from "./NinthPage";
 
 
@@ -25,6 +27,8 @@ class App extends Component {
                 <Route path="/fourth" component={FourthPage}/>
                 <Route path="/fifth" component={FifthPage}/>
                 <Route path="/sixth" component={SixthPage}/>
+                <Route path="/seventh" component={SeventhPage}/>
+                <Route path="/eighth" component={EighthPage}/>
                 <Route path="/ninth" component={NinthPage}/>
             
           </Switch>
