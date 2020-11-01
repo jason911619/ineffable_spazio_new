@@ -32,7 +32,7 @@ const SecondPage=()=>{
         <nav>
         <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em", 
         marginTop: "-55vh",marginLeft: "-7vw",  zIndex:"2",position: "absolute",textAlign: "center"  }} 
-        h2 to="/third">設 計 成 像 技 術</Link>
+        h2 to="/fourth">設 計 成 像 技 術</Link>
         </nav>
 
         <h3>Design Visualize App</h3>
@@ -42,11 +42,11 @@ const SecondPage=()=>{
         <img src="./companyinfo_3.png" alt="png"/>
         <nav>
         <Link style={{ textDecoration: 'none',color: "white",fontSize: "1.5em", 
-        marginTop: "-55vh",marginLeft: "-7vw",  zIndex:"2",position: "absolute",textAlign: "center"  }} 
-        h2 to="/third">設 計 管 理 系 統</Link>
+        marginTop: "-55vh",marginLeft: "-3.5vw",  zIndex:"2",position: "absolute",textAlign: "center"  }} 
+        h2 to="/fifth">保 養 品</Link>
         </nav>
 
-        <h3>Management System</h3>
+        <h3>Care products</h3>
         </div>
         
     </div>
